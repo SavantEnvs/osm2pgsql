@@ -1,0 +1,9 @@
+project: savantenvs/osm2pgsql
+target: expire-pbf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/expire-pbf/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_expire_pbf
+    libfuzzer: true
+    timeout: 5

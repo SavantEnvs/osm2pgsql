@@ -1,0 +1,9 @@
+project: savantenvs/osm2pgsql
+target: style
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/style/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_style
+    libfuzzer: true
+    timeout: 5

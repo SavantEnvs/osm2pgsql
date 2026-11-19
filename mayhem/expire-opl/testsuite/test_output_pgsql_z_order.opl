@@ -1,0 +1,15 @@
+n1 v1 dV c0 t i0 u Thighway=bus_stop x-122.5 y49
+n2 v1 dV c0 t i0 u Thighway=bus_stop x-122.51 y49.005
+n3 v1 dV c0 t i0 u T x-122.5 y49.01
+w1 v1 dV c0 t i0 u Thighway=motorway Nn1,n2
+w2 v1 dV c0 t i0 u Thighway=motorway_link Nn1,n2
+w3 v1 dV c0 t i0 u Thighway=trunk Nn1,n2
+w4 v1 dV c0 t i0 u Thighway=trunk_link Nn1,n2
+w5 v1 dV c0 t i0 u Thighway=primary Nn1,n2
+w6 v1 dV c0 t i0 u Thighway=primary_link Nn1,n2
+w7 v1 dV c0 t i0 u Thighway=secondary Nn1,n2
+w8 v1 dV c0 t i0 u Thighway=secondary_link Nn1,n2
+w9 v1 dV c0 t i0 u Thighway=tertiary Nn1,n2
+w10 v1 dV c0 t i0 u Thighway=tertiary_link Nn1,n2
+w11 v1 dV c0 t i0 u Thighway=residential,layer=5 Nn1,n2
+w1000 v1 dV c0 t i0 u Tbuilding=yes Nn1,n2,n3,n1

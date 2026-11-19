@@ -1,0 +1,9 @@
+project: savantenvs/osm2pgsql
+target: ewkb
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ewkb/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_ewkb
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,4 @@
+n1 v1 dV c0 t i0 u T x-122.5 y49
+n2 v1 dV c0 t i0 u T x-122.51 y49
+w1 v1 dV c0 t i0 u Thighway=primary Nn1,n2
+r1 v1 dV c0 t i0 u Ttype=route,route=road Mw1@

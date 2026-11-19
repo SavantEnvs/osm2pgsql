@@ -1,0 +1,6 @@
+project: savantenvs/osm2pgsql
+target: expire-o5m
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_expire_o5m
+    libfuzzer: true
+    timeout: 5

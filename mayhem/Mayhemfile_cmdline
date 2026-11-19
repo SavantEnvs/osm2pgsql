@@ -1,0 +1,9 @@
+project: savantenvs/osm2pgsql
+target: cmdline
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cmdline/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_cmdline
+    libfuzzer: true
+    timeout: 5
